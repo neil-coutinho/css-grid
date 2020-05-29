@@ -9,3 +9,17 @@
         text-align: center;
     }
 }
+
+
+.griddy {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 15px;
+    margin-top: 25px;
+
+
+    .item {
+        background: var(--red);
+        text-align: center;
+    }
+}
