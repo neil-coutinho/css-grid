@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+   --default-grey : #f3f3f3;
+   --default-font-color: #333333;
+   --default-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background: var(--default-grey);
+    color: var(--default-font-color);
+    font-family: var(--default-font);
+}
