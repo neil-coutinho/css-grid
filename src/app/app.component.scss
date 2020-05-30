@@ -1,3 +1,26 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 15px;
+    margin-bottom: 20px;
+
+    .item {
+        background: var(--red);
+
+        &.item6 {
+           grid-column: span 2;
+           grid-row: span 3;
+        }
+        
+        &.item7 {
+            grid-row: span 3;
+          
+         }
+    }
+}
+
+
+
 .container {
     display: grid;
     grid-template-columns: 200px 2fr 1fr;
@@ -15,7 +38,7 @@
 
 .griddy {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 200px) 1fr;
     grid-template-rows: 100px;
     grid-gap: 15px;
     margin-top: 25px;
