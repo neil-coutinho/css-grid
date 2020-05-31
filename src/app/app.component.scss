@@ -1,6 +1,25 @@
+.cardio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+     grid-template-rows: 200px;
+    grid-gap: 10px;
+    margin-bottom: 25px;
+    .item {
+        background: var(--orange);
+        text-align: center;
+
+        &.item3 {
+            // grid-column-end: -1;
+            grid-column: span 2 / -1;
+        }
+    }
+}
+
+
+
 .main {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 150px);
     grid-gap: 15px;
     margin-bottom: 20px;
 
@@ -14,6 +33,12 @@
         
         &.item7 {
             grid-row: span 3;
+          
+         }
+
+         &.item10 {
+            grid-column: 1/ -1;
+            grid-row: span 2;
           
          }
     }
