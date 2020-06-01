@@ -1,6 +1,26 @@
+.minmax {
+    display: grid;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 150px;
+    grid-gap: 10px;
+    .item {
+        background: var(--red);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 .cardio {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
      grid-template-rows: 200px;
     grid-gap: 10px;
     margin-bottom: 25px;
